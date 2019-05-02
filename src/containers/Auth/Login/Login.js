@@ -193,6 +193,7 @@ class Login extends Component {
             height={50}
             marginTop={20}
             title="Login"
+            loader={loader}
             onPress={this._handleLogin}
             backgroundColor="rgb(34,150,234)"
             color="#FFFFFF"

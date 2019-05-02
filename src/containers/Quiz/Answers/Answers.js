@@ -7,7 +7,6 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import styles from './AnswersStyle';
 
 const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
 
 mapStateToProps = (state) => {
     return {
@@ -17,8 +16,6 @@ mapStateToProps = (state) => {
 }
 mapDispatchToProps = (dispatch) => {
     return {
-
-
     }
 }
 
@@ -38,7 +35,6 @@ class Answers extends Component {
         const { questions, navigation, french } = this.props;
         const { answers } = this.state;
         const {
-            ImageBackgroundStyle,
             TopicHeader,
             TopicHeaderText,
             ListItem,
@@ -47,7 +43,6 @@ class Answers extends Component {
             QuestionImageContainer,
             QuestionText,
             QuestionImage,
-            AnswerContainer,
             AnswerTextHeading,
             AnswerText
         } = styles;
