@@ -1,5 +1,4 @@
 import firebase from 'firebase';
-
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyBs3KmsM3Yhfy8kDTPbkEDvwfFIiQAJU9s",

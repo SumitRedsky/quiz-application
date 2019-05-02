@@ -141,7 +141,7 @@ class PracticalTest extends Component {
         [type]: { attemptedQues: questionNO + 1 }
       }
     };
-    await fb.database()
+    fb.database()
       .ref("/users")
       .child(user.uid)
       .set(updatedUser)
@@ -346,10 +346,10 @@ class PracticalTest extends Component {
               width={100}
               title={french ? "terminer" : "Finish"}
               color="#FFFFFF"
-              borderRadius={6}
+              borderRadius={20}
               onPress={() => {
                 this._handleNextQuestion();
-                navigate("Categories");
+                navigate("Categories")
               }}
               backgroundColor="#44e7c4"
             />
@@ -358,7 +358,7 @@ class PracticalTest extends Component {
                   width={100}
                   title={french ? "Prochain" : "Next"}
                   color="#FFFFFF"
-                  borderRadius={6}
+                  borderRadius={20}
                   onPress={this._handleNextQuestion}
                   backgroundColor="#44e7c4"
                 />

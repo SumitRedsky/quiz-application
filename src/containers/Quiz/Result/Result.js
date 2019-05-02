@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { View, BackHandler, ImageBackground, StatusBar } from 'react-native';
 import { Container, Content, Header, Card, Button, CardItem, Text } from './../../../materialComponents';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
-import { PowerTranslator } from 'react-native-power-translator';
 import styles from './ResultStyles';
 
 import { _showSnack } from './../../../store/actions/snack_actions';
@@ -85,6 +84,7 @@ class Result extends Component {
                                     size={200}
                                     width={25}
                                     fill={score}
+                                    rotation={0}
                                     tintColor={(score <= minimum) ? '#e00000' : '#3DBA81'}
                                     backgroundColor="#ffffff" >
                                     {

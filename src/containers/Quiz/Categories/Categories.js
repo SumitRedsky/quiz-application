@@ -250,6 +250,7 @@ class Categories extends Component {
                               size={100}
                               width={12}
                               fill={progress}
+                              rotation={0}
                               tintColor="#3DBA81"
                               backgroundColor="#ffffff"
                             >
