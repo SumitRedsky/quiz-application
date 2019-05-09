@@ -9,5 +9,5 @@ Cross-platform mobile app for Android and iOS written with React Native.
 ![image](./src/quiz6.jpeg)
 ![image](./src/quiz7.jpeg)
 ![image](./src/quiz8.jpeg)
-![image](./src/quiz9.jpeg)
+![image](./src/quiz11.jpeg)
 
