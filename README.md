@@ -4,10 +4,10 @@ Cross-platform mobile app for Android and iOS written with React Native.
 ## Screeshots
 ![image](./src/quiz1.jpeg)
 ![image](./src/quiz2.jpeg)
-![image](./src/quiz 3.jpeg)
-![image](./src/quiz 4.jpeg)
-![image](./src/quiz 6.jpeg)
-![image](./src/quiz 7.jpeg)
-![image](./src/quiz 8.jpeg)
-![image](./src/quiz 9.jpeg)
+![image](./src/quiz3.jpeg)
+![image](./src/quiz4.jpeg)
+![image](./src/quiz6.jpeg)
+![image](./src/quiz7.jpeg)
+![image](./src/quiz8.jpeg)
+![image](./src/quiz9.jpeg)
 
