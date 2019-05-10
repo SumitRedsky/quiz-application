@@ -31,13 +31,15 @@ const styles = {
     height: "60%",
     flexDirection: "row",
     alignItems: "center",
-    marginLeft: 25
+    marginLeft: 25,
+    backgroundColor: "transparent"
   },
   ButtonBottomLineContainer: {
     height: "30%",
     alignItems: "center",
     justifyContent: "flex-end",
     marginLeft: 15,
+    backgroundColor: "transparent"
   },
 
   OptionsContainer: {
@@ -81,11 +83,13 @@ const styles = {
   },
   HeaderText: {
     marginLeft: "5%",
-    marginTop: 20
+    marginTop: 20,
+    backgroundColor: "transparent"
   },
   LogoutButton: {
     marginTop: 20,
-    marginLeft: "60%"
+    marginLeft: "60%",
+    backgroundColor: "transparent"
   },
   SimpleHeaderText: {
     fontSize: 17,

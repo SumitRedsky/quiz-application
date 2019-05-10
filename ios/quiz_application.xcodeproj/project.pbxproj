@@ -54,7 +54,6 @@
 		D6AAF3ECF3A641E081EFC39D /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F14E15A2110E4260A260B01E /* Ionicons.ttf */; };
 		E8F4E774DC6F451C9A8E8980 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A03ED5A0C6D044FDAFE5BB12 /* Entypo.ttf */; };
 		F0B3D269CA1343FD98AAC52C /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54723E20D658487B91638374 /* Feather.ttf */; };
-		15197314304D488EA282C2F8 /* libRNCardView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B8FFB92C8B42AC86EF6A60 /* libRNCardView.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -415,9 +414,7 @@
 		F14E15A2110E4260A260B01E /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		F2063A56EAC34F9CA0BA91F7 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		F61B0F889E1A42F1A85FDDD9 /* RCTFBLogin.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTFBLogin.xcodeproj; path = "../node_modules/react-native-facebook-login/RCTFBLogin.xcodeproj"; sourceTree = "<group>"; };
-		BA5FD3313D4F449D9AC06A77 /* RNCardView.xcodeproj */ = {isa = PBXFileReference; name = "RNCardView.xcodeproj"; path = "../node_modules/react-native-cardview/ios/RNCardView.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
-		B0B8FFB92C8B42AC86EF6A60 /* libRNCardView.a */ = {isa = PBXFileReference; name = "libRNCardView.a"; path = "libRNCardView.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
-/* End PBXFileReference section */
+		/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		00E356EB1AD99517003FC87E /* Frameworks */ = {
@@ -452,7 +449,6 @@
 				525D829B2043053300EA737A /* libART.a in Frameworks */,
 				6B5D0633DFE1470789D47D83 /* libRCTFBLogin.a in Frameworks */,
 				8776EC35BAD243588BBA6C91 /* libRNPaypalWrapper.a in Frameworks */,
-				15197314304D488EA282C2F8 /* libRNCardView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +691,6 @@
 				C418B835DC9845C6B737264E /* RNVectorIcons.xcodeproj */,
 				F61B0F889E1A42F1A85FDDD9 /* RCTFBLogin.xcodeproj */,
 				6C36F7BBB124498FA81B4EA2 /* RNPaypalWrapper.xcodeproj */,
-				BA5FD3313D4F449D9AC06A77 /* RNCardView.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1381,7 +1376,6 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/tipsi-stripe/ios/TPSStripe",
 					"$(SRCROOT)..\node_modules\neact-native-paypal-wrapperios/**",
-					"$(SRCROOT)\..\node_modules\react-native-cardview\ios",
 				);
 				INFOPLIST_FILE = quiz_applicationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1414,7 +1408,6 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/tipsi-stripe/ios/TPSStripe",
 					"$(SRCROOT)..\node_modules\neact-native-paypal-wrapperios/**",
-					"$(SRCROOT)\..\node_modules\react-native-cardview\ios",
 				);
 				INFOPLIST_FILE = quiz_applicationTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1449,7 +1442,6 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/tipsi-stripe/ios/TPSStripe",
 					"$(SRCROOT)..\node_modules\neact-native-paypal-wrapperios/**",
-					"$(SRCROOT)\..\node_modules\react-native-cardview\ios",
 				);
 				INFOPLIST_FILE = quiz_application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1477,7 +1469,6 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/tipsi-stripe/ios/TPSStripe",
 					"$(SRCROOT)..\node_modules\neact-native-paypal-wrapperios/**",
-					"$(SRCROOT)\..\node_modules\react-native-cardview\ios",
 				);
 				INFOPLIST_FILE = quiz_application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1511,7 +1502,6 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/tipsi-stripe/ios/TPSStripe",
 					"$(SRCROOT)..\node_modules\neact-native-paypal-wrapperios/**",
-					"$(SRCROOT)\..\node_modules\react-native-cardview\ios",
 				);
 				INFOPLIST_FILE = "quiz_application-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1553,7 +1543,6 @@
 					"$(SRCROOT)/../node_modules/react-native-facebook-login/RCTFBLogin/**",
 					"$(SRCROOT)/../node_modules/tipsi-stripe/ios/TPSStripe",
 					"$(SRCROOT)..\node_modules\neact-native-paypal-wrapperios/**",
-					"$(SRCROOT)\..\node_modules\react-native-cardview\ios",
 				);
 				INFOPLIST_FILE = "quiz_application-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

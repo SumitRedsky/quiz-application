@@ -243,7 +243,7 @@ class Categories extends Component {
                     <View style={ListItemRight}>
                       <View style={ListItemRightCircle}>
                         <ImageBackground
-                          style={{ height: 101, width: 101 }}
+                          style={{ height: 101, width: 101, backgroundColor: "transparent" }}
                           source={require("./../../../images/oval.png")}>
                           <Card width={100} height={100} borderRadius={50}>
                             <AnimatedCircularProgress

@@ -12,7 +12,7 @@ import {
   ImageBackground,
   Image,
   Dimensions,
-  StatusBar
+  StatusBar,
 } from "react-native";
 import {
   Container,
@@ -134,18 +134,18 @@ class Home extends Component {
     const { navigation, french } = this.props;
     return (
       <Container>
-        {/* <Header
+          {/* <Header
           title={french ? "Accueil" : "Home"}
           rightIconText={french ? "Déconnecter" : "Logout"}
           rightIconOnPress={() => this.props.logout()}
         /> */}
-        <Content padding={0}>
-          <ImageBackground
-            style={ImageBackgroundStyle}
-            source={require("./../../../images/background.png")}
-          >
-            {/* french langauge support */}
-            {/* <View style={OptionsContainer}>
+          <Content padding={0}>
+            <ImageBackground
+              style={ImageBackgroundStyle}
+              source={require("./../../../images/background.png")}
+            >
+              {/* french langauge support */}
+              {/* <View style={OptionsContainer}>
                         {
                             french ? (<Text>Version française:</Text>) : (<Text>French Version:</Text>)
                         }
@@ -153,105 +153,106 @@ class Home extends Component {
                         <Switch onValueChange={() => this.handleLang()} value={french} />
                     </View> */}
 
-            <View style={MainContainer}>
-              <View style={HeaderContainer}>
-                <View style={HeaderText}>
-                  {french ? (
-                    <Text style={SimpleHeaderText}>Accueil</Text>
-                  ) : (
-                      <Text style={SimpleHeaderText}>Home</Text>
-                    )}
+              <View style={MainContainer}>
+                <View style={HeaderContainer}>
+                  <View style={HeaderText}>
+                    {french ? (
+                      <Text style={SimpleHeaderText}>Accueil</Text>
+                    ) : (
+                        <Text style={SimpleHeaderText}>Home</Text>
+                      )}
+                  </View>
+                  <View style={LogoutButton}>
+                    <TouchableOpacity
+                      onPress={() => this.props.logout()}
+                    >
+                      {french ? (
+                        <Text style={SimpleHeaderText}>Déconnecter</Text>
+                      ) : (
+                          <Text style={SimpleHeaderText}>Logout</Text>
+                        )}
+                    </TouchableOpacity>
+                  </View>
                 </View>
-                <View style={LogoutButton}>
+
+                <View style={{ flexDirection: "row", backgroundColor: "transparent" }}>
+                  <Text style={SimpleNameText}>Hi, </Text>
+                  <Text style={SimpleNameText}>{this.state.userName}</Text>
+                </View>
+
+                <ImageBackground
+                  style={PracticeBackgroundImage}
+                  source={require("./../../../images/car.png")}
+                >
                   <TouchableOpacity
-                    onPress={() => this.props.logout()}
+                    disabled={loading}
+                    onPress={() => this._handleRoute("Categories")}
+                    style={SimpleCard}
                   >
-                    {french ? (
-                      <Text style={SimpleHeaderText}>Déconnecter</Text>
-                    ) : (
-                        <Text style={SimpleHeaderText}>Logout</Text>
-                      )}
-                  </TouchableOpacity>
-                </View>
-              </View>
 
-              <View style={{ flexDirection: "row" }}>
-                <Text style={SimpleNameText}>Hi, </Text>
-                <Text style={SimpleNameText}>{this.state.userName}</Text>
-              </View>
-
-              <ImageBackground
-                style={PracticeBackgroundImage}
-                source={require("./../../../images/car.png")}
-              >
-                <TouchableOpacity
-                  disabled={loading}
-                  onPress={() => this._handleRoute("Categories")}
-                  style={SimpleCard}
-                >
-
-                  <View style={ButtonHeadingContainer}>
-                    <Image
-                      style={ButtonLogoStyle}
-                      source={require("./../../../images/question.png")}
-                    />
-                    {french ? (
-                      <Text style={SimpleCardText}>Théorie de la pratique</Text>
-                    ) : (
-                        <Text style={SimpleCardText}>Practice Theory</Text>
-                      )}
-                  </View>
-                  <View style={ButtonBottomLineContainer}>
-                    <Text style={SimpleBottomLineText}>
-                      It only takes about 3 minutes of your time
+                    <View style={ButtonHeadingContainer}>
+                      <Image
+                        style={ButtonLogoStyle}
+                        source={require("./../../../images/question.png")}
+                      />
+                      {french ? (
+                        <Text style={SimpleCardText}>Théorie de la pratique</Text>
+                      ) : (
+                          <Text style={SimpleCardText}>Practice Theory</Text>
+                        )}
+                    </View>
+                    <View style={ButtonBottomLineContainer}>
+                      <Text style={SimpleBottomLineText}>
+                        It only takes about 3 minutes of your time
                     </Text>
-                  </View>
-                </TouchableOpacity>
-              </ImageBackground>
-              <ImageBackground
-                style={MockBackgroundImage}
-                source={require("./../../../images/gearbox.png")}
-              >
-                <TouchableOpacity
-                  disabled={loading}
-                  onPress={() =>
-                    navigation.navigate("MockTest", {
-                      questionsArray: mockQuestionsArray
-                    })
-                  }
-                  // onPress={() =>
-                  //   navigation.navigate("Result")
-                  // }
-                  style={SimpleCard}
+                    </View>
+                  </TouchableOpacity>
+                </ImageBackground>
+                <ImageBackground
+                  style={MockBackgroundImage}
+                  source={require("./../../../images/gearbox.png")}
                 >
+                  <TouchableOpacity
+                    disabled={loading}
+                    onPress={() =>
+                      navigation.navigate("MockTest", {
+                        questionsArray: mockQuestionsArray
+                      })
+                    }
+                    // onPress={() =>
+                    //   navigation.navigate("Result")
+                    // }
+                    style={SimpleCard}
+                  >
 
-                  <View style={ButtonHeadingContainer}>
-                    <Image
-                      style={ButtonLogoStyle}
-                      source={require("./../../../images/timer.png")}
-                    />
-                    {french ? (
-                      <Text style={SimpleCardText}>Théorie de simulacre</Text>
-                    ) : (
-                        <Text style={SimpleCardText}>Mock Theory</Text>
-                      )}
-                  </View>
-                  <View style={ButtonBottomLineContainer}>
-                    <Text style={SimpleBottomLineText}>
-                      It only takes about 5 minutes of your time
+                    <View style={ButtonHeadingContainer}>
+                      <Image
+                        style={ButtonLogoStyle}
+                        source={require("./../../../images/timer.png")}
+                      />
+                      {french ? (
+                        <Text style={SimpleCardText}>Théorie de simulacre</Text>
+                      ) : (
+                          <Text style={SimpleCardText}>Mock Theory</Text>
+                        )}
+                    </View>
+                    <View style={ButtonBottomLineContainer}>
+                      <Text style={SimpleBottomLineText}>
+                        It only takes about 5 minutes of your time
                   </Text>
-                  </View>
-                </TouchableOpacity>
-              </ImageBackground>
-            </View>
-            {loading ? (
-              <ActivityIndicator
-                size={Platform.OS === "android" ? 40 : null}
-                color="#FFF"
-              />
-            ) : null}
-          </ImageBackground>
-        </Content>
+                    </View>
+                  </TouchableOpacity>
+                </ImageBackground>
+              </View>
+              {loading ? (
+                <ActivityIndicator
+                  style={{ marginBottom: 20 }}
+                  size={Platform.OS === "android" ? 40 : null}
+                  color="#FFF"
+                />
+              ) : null}
+            </ImageBackground>
+          </Content>
       </Container>
     );
   }

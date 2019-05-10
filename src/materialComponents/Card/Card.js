@@ -54,7 +54,7 @@ const shadowObj = {
   //   shadowColor: "#1e1e1e",
   shadowColor: "rgba(142, 142, 142, 0.2)",
   shadowOffset: { width: 2, height: 2 },
-  shadowOpacity: 0.2,
+  shadowOpacity: 0.8,
   elevation: 2
 };
 

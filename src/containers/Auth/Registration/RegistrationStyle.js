@@ -3,7 +3,7 @@ const styles = {
     flex: 1,
     padding: 30,
     justifyContent: "flex-start",
-    backgroundColor: "#FFFFFF"
+    // backgroundColor: "#FFFFFF"
   },
   LogoImageStyle: {
     width: 120,

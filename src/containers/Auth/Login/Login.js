@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { View, Image, ImageBackground, TouchableOpacity, StatusBar } from "react-native";
+import { View, Image, ImageBackground, TouchableOpacity, StatusBar, SafeAreaView } from "react-native";
 import {
   Container,
   Content,
@@ -131,6 +131,10 @@ class Login extends Component {
     return (
       <Container>
         <Content style={ContentStyle}>
+          {/* <StatusBar
+            backgroundColor="blue"
+            barStyle="light-content"
+            hidden={true}></StatusBar> */}
           <Image
             style={LogoImageStyle}
             source={require("./../../../images/logo.png")}

@@ -85,8 +85,8 @@ class Result extends Component {
                                     width={25}
                                     fill={score}
                                     rotation={0}
-                                    tintColor={(score <= minimum) ? '#e00000' : '#3DBA81'}
-                                    backgroundColor="#ffffff" >
+                                    backgroundColor={"#FFFFFF"}
+                                    tintColor={(score <= minimum) ? '#e00000' : '#3DBA81'}>
                                     {
                                         (fill) => (
                                             <Text style={ProgressText}>{score} %</Text>

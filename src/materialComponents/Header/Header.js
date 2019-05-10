@@ -7,7 +7,7 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 const Header = ({
   french,
   height,
-  backgroundColor,
+  backgoundColor,
   shadow,
   title,
   titleColor,
@@ -19,21 +19,21 @@ const Header = ({
 }) => {
   return (
     <ImageBackground
-      style={{ width: "100%", height: height }}
+      style={{ width: "100%", height: height, backgroundColor: "transparent" }}
       source={require("./../../images/header-background.png")}>
-
       <View
         style={[
           {
             height: height,
             position: "relative",
             flexDirection: "row",
-            justifyContent: "space-between"
+            justifyContent: "space-between",
+            backgoundColor: "transparent"
           },
           shadow ? shadowObj : null
         ]}
       >
-        <View style={{ flexDirection: "row", alignItems: "center" }}>
+        <View style={{ flexDirection: "row", backgroundColor: "transparent", alignItems: "center" }}>
           {leftIcon ? (
             <TouchableOpacity
               style={{
@@ -78,7 +78,7 @@ const Header = ({
               height: height,
               alignItems: "flex-end",
               justifyContent: "center",
-              alignSelf: "flex-end"
+              alignSelf: "flex-end",
             }}
             onPress={rightIconOnPress}
           >

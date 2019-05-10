@@ -209,7 +209,7 @@ class PracticalTest extends Component {
         ? (choices = categoryQuestions[questionNO].choices)
         : null;
     return (
-      <Container backgroundColor="#FFFFFF">
+      <Container>
         <Header
           titleColor="#ffffff"
           title={french ? "Test de pratique" : "Practice Test"}
@@ -217,7 +217,6 @@ class PracticalTest extends Component {
           leftIconOnPress={() => this._handleRoute("Categories")}
         />
         <Content
-          backgroundColor="#FFFFFF"
           paddingHorizontal={15}
           paddingTop={15}
         >

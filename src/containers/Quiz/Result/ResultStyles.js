@@ -9,7 +9,7 @@ const styles = {
         paddingTop: 20
     },
     ContentStyle: {
-
+        backgroundColor:"#ffffff"
     },
     ProgressText: {
         fontSize: 36,
