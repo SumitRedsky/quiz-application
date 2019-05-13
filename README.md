@@ -17,7 +17,7 @@ Cross-platform mobile app for Android and iOS written with React Native.
 
 ## Installation
 This app is built with the React Native CLI. Once you have the [CLI installed](https://docs.reactnative.org/start/quick-setup), start by cloning the repo:
-1. `git clone https://github.com/RedskyAtech/dating-app.git`
+1. `git clone https://github.com/SumitRedsky/quiz-application.git`
 2. `cd quiz-app`
 3. `npm install` 
 
