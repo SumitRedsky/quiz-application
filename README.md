@@ -12,7 +12,7 @@ Cross-platform mobile app for Android and iOS written with React Native.
 ![image](./src/quiz11.jpeg)
 
 * ## Prerequisites
-1. Globally installed React native  - `npm install -g react-natice-cli`
+1. Globally installed React native  - `npm install -g react-native-cli`
 2. Mac OS to build iOS app.
 
 ## Installation
